@@ -60,7 +60,7 @@
         <div class="col text-center pt-5 mt-5">
          <div style="font-size: 80px; color: white;">Ecommerce Mobile</div>
         <h4 style="color: white;" class="mt-5">Buy your own custom mobile phone, tablet, TV screen or laptop</h4>
-        <a class="btn btn-success btn1 mt-5 mb-5 " id="btn1" href="#" role="button">Custom Yours</a>
+        <a class="btn btn-success btn1 mt-5 mb-5 " id="btn1" href="Main.html" role="button">Main Page</a>
     </div>
     </div>
     </div>
@@ -104,7 +104,7 @@
           <div class="form-group"  >
             <label for="comment">Comment:</label>
             <textarea class="form-control" rows="5" id="ttt" ></textarea>
-            <a class="btn btn-success btn1 mt-5 mb-5 " role="button">Submit</a>
+            <a class="btn btn-success btn1 mt-5 mb-5 "id="submit" role="button">Submit</a>
             <button class="btn btn-success btn1 mt-5 mb-5 "  >Clear comments</button>
             <a class="btn btn-success btn1 mt-5 mb-5 " id="mainButton1"  role="button">Main Page</a>
            
@@ -123,6 +123,22 @@
             });
 
         });
+        
+        $(function () {
+
+$("#submit").click(function () {
+
+    if (confirm("¿Está seguro de que desea editar este producto?")) {
+        
+        $(this).parent().parent().hide();
+    }
+    return false;
+
+
+});
+
+}); 
+
         
     
     </script>
@@ -203,6 +219,7 @@
   integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
   crossorigin="anonymous"></script>
 
+  
 
 
 </body>

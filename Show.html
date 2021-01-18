@@ -7,6 +7,8 @@
    
 
     <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <title>Show Products</title>
@@ -147,15 +149,28 @@
 
     </section>
 
-   <a class="btn  btn-show  " style="margin-left: 15px;margin-top: 5px;" role="button" href="#">Main Page</a>
-   <a class="btn  btn-show pr-5  float-right" style="margin-right: 15px;margin-top: 5px;" role="button" href="#">Edit Page</a>
+   <a class="btn  btn-show  " style="margin-left: 15px;margin-top: 5px;" id="mainButton1" role="button" href="#">Main Page</a>
+   <a class="btn  btn-show pr-5  float-right" style="margin-right: 15px;margin-top: 5px;" id="mainButton2" role="button" href="#">Edit Page</a>
+
+<script>
+
+   $(function () {
+
+    // Cuando hacemos click en un botón nos vamos a otra página
+    $("#mainButton1").click(function () {
+        window.location.href = "Main.html";
+    });
+
+});
 
 
+// Cuando hacemos click en un botón nos vamos a otra página
+$("#mainButton2").click(function () {
+    window.location.href = "Edit.html";
+});
 
 
-
-
-
+</script>
 
 
 
